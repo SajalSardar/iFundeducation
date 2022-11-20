@@ -1,0 +1,344 @@
+:root{
+    --primary-color: #19B76B ;
+    --secondary-color: #DFFCED;
+    --tertiary-color: #2c3e50;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,ol,nav,span,.navbar{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    color: #222;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-size: 16px;
+    line-height: 26px;
+    color: rgb(45, 44, 44);
+    font-weight: 400;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 25px;
+}
+h4{
+    font-size: 18px;
+}
+.section_header{
+    margin-bottom: 50px;
+}
+.section_header h2{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+.section_header h2:after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 60px;
+    background: var(--primary-color);
+    left: 0;
+    bottom: 0;
+}
+
+/* top header part css */
+#top_header{
+    background-color: var(--tertiary-color);
+    padding: 10px 0;
+}
+.header_left p{
+    color: #fff;
+}
+.header_right ul{
+    text-align: right;
+}
+.header_right ul li{
+    display: inline-block;
+}
+.header_right ul li a{
+    font-size: 16px;
+    color: #fff;
+    transition: .4s;
+    -webkit-transition: .4s;
+    padding: 0 10px;
+    position: relative;
+}
+.header_right ul li:hover > a{
+    color: var(--primary-color);
+}
+
+.header_right ul li a:after{
+    position: absolute;
+    content: '';
+    right: -2px;
+    top: 50%;
+    height: 12px;
+    width: 1px;
+    background-color: var(--primary-color);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.header_right ul li:last-child a:after{
+    width: 0;
+}
+
+.header_left i{
+    color:var(--primary-color);
+    padding-right: 10px;
+}
+
+/* menu part css  */
+.logo{
+    padding: 20px 0;
+}
+
+.menuFix{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: 999;
+    box-shadow: 0 5px 25px 0 rgb(214 215 216 / 60%);
+}
+
+#iNav ul li a{
+    color: #222;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    position: relative;
+}
+#iNav ul li:last-child a{
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+}
+#iNav ul li:hover > a,
+#iNav ul li a.active{
+    color: var(--primary-color);
+}
+#iNav ul li a:after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    background-color: var(--primary-color);
+    bottom: 0;
+    left: 20px;
+    transition: .4s;
+    -webkit-transition: .4s;
+}
+#iNav ul li a.active:after,
+#iNav ul li:hover > a:after{
+    width: 25px;
+}
+#iNav ul li:last-child a:after{
+    height: 0;
+}
+#iNav ul li:last-child a:hover{
+    color: #fff;
+    background-color: var(--tertiary-color);
+}
+/* hero part css */
+.banner_item{
+    height: 650px;
+    background-position: center !important;
+    background-size: cover !important;
+}
+.banner_caption{
+    width: 40%;
+}
+.banner_caption h1{
+    font-size: 50px;
+}
+
+.banner_caption h1 span{
+    color: var(--primary-color);
+}
+.banner_caption p{
+    margin-top: 15px;
+}
+.banner_caption a{
+    background-color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 15px;
+    transition: .4s;
+   -webkit-transition: .4s;
+}
+.banner_caption a:hover{
+    background-color: var(--tertiary-color);
+}
+
+/* home search box */
+.search_box{
+    padding: 5px;
+    border-radius: 40px;
+    box-shadow: 0 5px 25px 0 rgb(214 215 216 / 60%);
+    background: #fff;
+}
+.search_box input{
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    font-size: 16px;
+}
+.search_box button{
+    border: 0;
+    border-radius: 40px !important;
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: .4s;
+    -webkit-transition: .4s;
+    padding: 0 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.search_box button:hover{
+    background: var(--tertiary-color);
+}
+
+/* fundraisers css */
+#fundraisers{
+    padding: 60px 0;
+}
+#fundraisers .section_header{
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+}
+#fundraisers .section_header a {
+    display: inline-block;
+    color: var(--tertiary-color);
+    font-weight: 500;
+    border: 1px solid #ddd;
+    padding: 2px 13px;
+    border-radius: 3px;
+    transition: .4s;
+    -webkit-transition: .4s;
+}
+#fundraisers .section_header a:hover{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.fundraisers_card{
+    box-shadow: 0 5px 25px 0 rgb(214 215 216 / 60%);
+    border-radius: 8px;
+    padding: 25px 15px ;
+    text-align: center;
+    margin-bottom: 26px;
+    
+}
+.fundraisers_card img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: .4s;
+    -webkit-transition: .4s;
+}
+.fundraisers_card:hover img{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+}
+.fundraisers_card h3{
+    padding: 10px 0;
+    transition: .4s;
+    -webkit-transition: .4s;
+}
+.fundraisers_card:hover h3{
+    color: var(--primary-color);
+}
+.fundraisers_card_sub li{
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+    color:  rgb(45, 44, 44);
+}
+.fundraisers_card_sub li:after{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    right: -5px;
+    top: 50%;
+     transform: translateY(-50%);
+     -webkit-transform: translateY(-50%);
+     background-color:var(--tertiary-color);
+}
+.fundraisers_card_sub li:last-child:after{
+    height: 0;
+    width: 0;
+}
+.fundraisers_card_sub li i{
+    margin-right: 4px;
+}
+.fundraisers_card p{
+    margin-top: 15px;
+}
+.fundraisers_card_bottom{
+    margin-top: 25px;
+}
+.fundraisers_card_bottom li{
+    font-weight: 700;
+    color:  rgb(45, 44, 44);
+    position: relative;
+    display: inline-block;
+    padding: 0 25px;
+}
+.fundraisers_card_bottom li:after{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 2px;
+    background-color: var(--tertiary-color);
+    right: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.fundraisers_card_bottom li:last-child:after{
+    width: 0;
+    height: 0;
+}
+.fundraisers_card_bottom span{
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+}
