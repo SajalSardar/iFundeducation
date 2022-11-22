@@ -71,16 +71,26 @@
   </nav>
   <!-- main menu part end -->
 
-  <!-- hero part  -->
-  <section id="banner">
-    <div class="banner_item" style="background:url(images/banner.png)">
-      <div class="container h-100">
-        <div class="row align-items-center h-100">
-          <div class="banner_caption">
-            <h1>Fund An <span> Education Fund</span> A Future</h1>
-            <p>Dedicated fundraising platform for Education!</p>
-            <a href="#">Donate now!</a>
-            <div class="search_box mt-5">
+  <!-- breadcrumb  -->
+  <section class="breadcrumb_section" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active">Fundraiser</li>
+      </ol>
+    </div>
+  </section>
+    <!-- breadcrumb end  -->
+  
+
+  <!-- Fundraisers area start -->
+  <section id="fundraisers" class="fundraiser_page">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section_header">
+            <h2>Fundraisers</h2>
+            <div class="search_box w-50">
               <form action="">
                 <div class="input-group ">
                   <input type="text" class="form-control" placeholder="Find fundraiser..">
@@ -88,21 +98,6 @@
                 </div>
               </form>
             </div>
-          </div>
-        </div>  
-      </div>
-    </div>
-  </section>
-  <!-- hero part end -->
-
-  <!-- Fundraisers area start -->
-  <section id="fundraisers">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section_header">
-            <h2>Fundraisers</h2>
-            <a href="#">View All <i class="fas fa-long-arrow-alt-right"></i></a>
           </div>
         </div>
       </div>
@@ -219,6 +214,20 @@
     </div>
   </section>
   <!-- Fundraisers area end -->
+
+  <!-- pagination  -->
+  <section id="custom_pagination">
+    <nav class="container mb-5">
+      <ul class="d-flex justify-content-center">
+        <li><a href="#">&laquo; Previous</a></li>
+        <li><a class="active" href="#">1</a></li>
+        <li><a  href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">Next &raquo;</a></li>
+      </ul>
+    </nav>
+  </section>
+  <!-- pagination end  -->
 
   <!-- footer part start -->
   <footer id="footer" class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
