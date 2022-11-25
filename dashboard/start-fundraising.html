@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iFundeducation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/fontawesome.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+
+<body>
+  <!-- header part start  -->
+  <header id="top_header">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-sm-6">
+          <div class="header_left">
+            <p>
+              <i class="fa-sharp fa-solid fa-paper-plane"></i>
+              admin@ifundeducation.com
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="header_right">
+            <ul>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="sign-up.html">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header part end -->
+
+  <!-- main menu part start -->
+  <nav class="navbar navbar-expand-md" id="main_navigation">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <img src="../images/logo.png" alt="" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#iNav">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="iNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fundraiser.html">Fundraiser</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">start a fundraiser</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- main menu part end -->
+
+  <!-- breadcrumb  -->
+  <section class="breadcrumb_section" style="
+        --bs-breadcrumb-divider: url(
+          &#34;data:image/svg + xml,
+          %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='%236c757d'/%3E%3C/svg%3E&#34;
+        );
+      ">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">iFundraiser</a></li>
+        <li class="breadcrumb-item active">Profile</li>
+      </ol>
+    </div>
+  </section>
+  <!-- breadcrumb end  -->
+
+  <section class="account_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-3">
+          <div class="mobile_menu_icon d-md-none">
+            <i class="fa-solid fa-gear fa-spin"></i>
+          </div>
+          <div class="account_menu">
+            <div class="close_icon d-md-none">&#10007;</div>
+            <ul>
+              <li class="active">
+                <a href="index.html"><i class="fas fa-dashboard"></i>Dashboard</a>
+              </li>
+              <li>
+                <a href="start-fundraising.html"><i class="fas fa-user"></i>Share Story</a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-hand-holding-heart"></i>Donations</a>
+              </li>
+              <li>
+                <a href=""> <i class="fas fa-money-bill-1"></i> Billing </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fas fa-money-bill-trend-up"></i> Withdrawals</a>
+              </li>
+
+              <li>
+                <a href="profile.html">
+                  <i class="fas fa-users"></i>Profile
+                </a>
+              </li>
+              <li>
+                <a href="change_password.html"> <i class="fas fa-cog"></i>Change password </a>
+              </li>
+              <li>
+                <a href=""> <i class="fas fa-sign-out"></i> Sign Out </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-9 col-md-8">
+          <div class="account_content_area">
+            <h3>Start Fundraiser</h3>
+            <form method="" action="" class="account_content_area_form">
+              <div class="row">
+                <div class="col-lg-6 mb-3">
+                  <label for="fund_title" class="form-label">Fundraiser Title :</label>
+                  <input type="text" class="form-control" id="fund_title">
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <label for="goal" class="form-label">Fundraising Goal :</label>
+                  <div class="input-group">
+                    <div class="input-group-text">
+                      <i class="fas fa-dollar"></i>
+                    </div>
+                    <input type="text" class="form-control" id="goal">
+                  </div>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                  <label for="" class="form-label">Fundraising For :</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">Fundraising For</option>
+                    <option value="">Tuition</option>
+                    <option value="">Books</option>
+                  </select>
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <label for="" class="form-label">Fundraising End Date :</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="date" placeholder="mm/dd/yy">
+                    <span class="input-group-text">
+                      <i class="fa fa-calendar"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="" class="form-label">Tell Your Story :</label>
+                  <textarea class="form-control" id="" rows="5"></textarea>
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="" class="form-label">Add Image :</label>
+                  <input class="form-control" type="file" id="" multiple>
+                </div>
+                <div class="col-12 mb-3">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox"> I agree the terms &amp;
+                      conditions
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer part start -->
+  <footer id="footer" class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="footer_about">
+            <img src="images/logo.png" alt="" />
+            <strong>FUND AN EDUCATION,FUND A FUTURE</strong>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisci elit. Proin non
+              felis tellus. Maurisu blandit eu enim sollicitudin.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="footer_contact px-lg-3">
+            <h3>Links</h3>
+            <div class="d-flex">
+              <ul class="w-50">
+                <li>
+                  <a href="#"><i class="far fa-arrow-alt-circle-right"></i>About</a>
+                </li>
+                <li>
+                  <a href="#"><i class="far fa-arrow-alt-circle-right"></i>Services</a>
+                </li>
+                <li>
+                  <a href="#"><i class="far fa-arrow-alt-circle-right"></i>Contact</a>
+                </li>
+              </ul>
+              <ul class="w-50">
+                <li>
+                  <a href="faq.html"><i class="far fa-arrow-alt-circle-right"></i>Faq</a>
+                </li>
+                <li>
+                  <a href="terms.html"><i class="far fa-arrow-alt-circle-right"></i>Terms &
+                    Condition</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="footer_contact">
+            <h3>Contact</h3>
+            <ul>
+              <li><i class="fas fa-envelope"></i> info@iFundEducation.com</li>
+              <li><i class="fas fa-globe"></i> www.iFundEducation.com</li>
+              <li><i class="fas fa-phone"></i> 0123546987</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row bottom_footer align-items-center">
+        <div class="col-md-6">
+          <div class="footer_copy">
+            <p>Copyright &copy; All rights reserved by iFundEducation</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <ul class="footer_social">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer part end -->
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

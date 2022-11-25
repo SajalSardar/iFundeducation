@@ -89,6 +89,29 @@
   .about_page_content {
     padding: 30px 0;
   }
+
+  .account_menu{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transform-origin: left;
+    -webkit-transform-origin: left;
+    transition: .4s;
+    -webkit-transition: .4s;
+  }
+  .account_content_area{
+    padding-left: 0;
+  }
+  .account_content_area_form select, .account_content_area_form input {
+    margin-bottom: 10px;
+  }
+  
+
 }
 
 
