@@ -116,8 +116,13 @@
               </li>
 
               <li>
-                <a href="profile.html">
-                  <i class="fas fa-users"></i>Profile
+                <a href="fundraiser-profile.html">
+                  <i class="fas fa-users"></i>Fundraiser Profile
+                </a>
+              </li>
+              <li>
+                <a href="donor-profile.html">
+                  <i class="fas fa-users"></i>Donor Profile
                 </a>
               </li>
               <li>
@@ -135,9 +140,14 @@
             <h3>Start Fundraiser</h3>
             <form method="" action="" class="account_content_area_form">
               <div class="row">
-                <div class="col-lg-6 mb-3">
+                <div class="col-12 mb-3 pb-4 border-bottom">
+                  <strong>Your total withdrawal amount will be:</strong>
+                  <p>Total donations - (iFundEducation platform + payment processing fees).</p>
+                  <p>Please set the fundraising amount covering those cost.</p>
+                </div>
+                <div class="col-12 mb-3">
                   <label for="fund_title" class="form-label">Fundraiser Title :</label>
-                  <input type="text" class="form-control" id="fund_title">
+                  <input type="text" class="form-control" id="fund_title" name="title">
                 </div>
                 <div class="col-lg-6 mb-3">
                   <label for="goal" class="form-label">Fundraising Goal :</label>
@@ -145,30 +155,48 @@
                     <div class="input-group-text">
                       <i class="fas fa-dollar"></i>
                     </div>
-                    <input type="text" class="form-control" id="goal">
+                    <input type="text" class="form-control" id="goal" name="goal">
                   </div>
-                </div>
-
-                <div class="col-lg-6 mb-3">
-                  <label for="" class="form-label">Fundraising For :</label>
-                  <select name="" id="" class="form-control">
-                    <option value="">Fundraising For</option>
-                    <option value="">Tuition</option>
-                    <option value="">Books</option>
-                  </select>
                 </div>
                 <div class="col-lg-6 mb-3">
                   <label for="" class="form-label">Fundraising End Date :</label>
-                  <div class="input-group">
-                    <input type="text" class="form-control" id="date" placeholder="mm/dd/yy">
-                    <span class="input-group-text">
-                      <i class="fa fa-calendar"></i>
-                    </span>
-                  </div>
+                  <input type="date" class="form-control" name="end_date" id="date" placeholder="mm/dd/yy">
+                </div>
+
+                <div class="col-12 mb-3">
+                  <label class="form-label d-block">Fundraising For :</label>
+                  <label class="py-1 px-3 border me-2 d-inline-block">
+                    <input type="checkbox" name="fundraising_for[]" value="Tuition"> Tuition
+                  </label>
+                  <label class="py-1 px-3 border me-2 d-inline-block">
+                    <input type="checkbox" name="fundraising_for[]" value="Room & Board"> Room & Board
+                  </label>
+                  <label class="py-1 px-3 border me-2 d-inline-block">
+                    <input type="checkbox" name="fundraising_for[]" value="Books"> Books
+                  </label>
+                  <label for="other" class="ms-3">Other:</label>
+                  <input type="text" id="other" class="form-control d-inline w-25" name="fundraising_for[]">
                 </div>
                 <div class="col-12 mb-3">
                   <label for="" class="form-label">Tell Your Story :</label>
-                  <textarea class="form-control" id="" rows="5"></textarea>
+                  <textarea class="form-control" id="editor" name="story"></textarea>
+                </div>
+                <div class="col-12 mb-3">
+                  <label class="form-label d-block">Add Giving Levels:</label>
+                  <label class="py-1 px-3 border me-2 d-inline-block">
+                    <input type="checkbox" name="giving_level[]" value="25"> $25
+                  </label>
+                  <label class="py-1 px-3 border me-2 d-inline-block">
+                    <input type="checkbox" name="giving_level[]" value="50"> $50
+                  </label>
+                  <label class="py-1 px-3 border me-2 d-inline-block">
+                    <input type="checkbox" name="giving_level[]" value="100"> $100
+                  </label>
+                  <label class="py-1 px-3 border me-2 d-inline-block">
+                    <input type="checkbox" name="giving_level[]" value="500"> $500
+                  </label>
+                  <label for="other" class="ms-3">Other:</label>
+                  <input type="text" id="other" class="form-control d-inline w-25" name="giving_level[]">
                 </div>
                 <div class="col-12 mb-3">
                   <label for="" class="form-label">Add Image :</label>
@@ -269,9 +297,17 @@
   </footer>
   <!-- footer part end -->
 
+
   <script src="../js/bootstrap.bundle.min.js"></script>
   <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
   <script src="../js/script.js"></script>
+
+  <script>
+    CKEDITOR.replace('editor');
+
+
+  </script>
 </body>
 
 </html>

@@ -848,3 +848,13 @@ padding: 10px 15px;
     box-shadow: 0 5px 25px 0 rgb(214 215 216 / 50%);
     padding: 20px;
 }
+
+.select2-container .select2-selection--single{
+    height: 40px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 40px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    top: 8px;
+}

@@ -8,6 +8,7 @@
   <title>iFundeducation</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css" />
   <link rel="stylesheet" href="../css/fontawesome.min.css" />
   <link rel="stylesheet" href="../css/style.css" />
@@ -115,8 +116,13 @@
                   <i class="fas fa-money-bill-trend-up"></i> Withdrawals</a>
               </li>
               <li>
-                <a href="profile.html">
-                  <i class="fas fa-users"></i>Profile
+                <a href="fundraiser-profile.html">
+                  <i class="fas fa-users"></i>Fundraiser Profile
+                </a>
+              </li>
+              <li>
+                <a href="donor-profile.html">
+                  <i class="fas fa-users"></i>Donor Profile
                 </a>
               </li>
               <li>
@@ -131,49 +137,40 @@
 
         <div class="col-lg-9 col-md-8">
           <div class="account_content_area">
-            <h3>Profile</h3>
+            <h3>Fundraiser Profile</h3>
             <form method="" action="" class="account_content_area_form">
               <div class="row">
                 <div class="col-lg-6 mb-3">
                   <label for="fname" class="form-label">First Name</label>
-                  <input type="text" class="form-control" id="fname" name="first-name">
+                  <input type="text" class="form-control" id="fname" name="fname">
                 </div>
                 <div class="col-lg-6 mb-3">
                   <label for="lname" class="form-label">Last Name</label>
-                  <input type="text" class="form-control" id="lname" />
+                  <input type="text" class="form-control" id="lname" name="lname" />
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="text" class="form-control" id="email" name="email">
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="number" name="phone" class="form-control" id="phone">
                 </div>
                 <div class="col-lg-6 mb-3">
                   <label for="date" class="form-label">Date of Birth</label>
                   <input type="date" class="form-control" id="date">
                 </div>
                 <div class="col-lg-6 mb-3">
-                  <label for="inputGender" class="form-label">Gender</label>
-                  <select id="inputGender" class="form-select">
-                    <option selected="">Select</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                    <option>N/A</option>
-                  </select>
-                </div>
-                <div class="col-lg-6 mb-3">
-                  <label for="inputEmail" class="form-label">E-mail</label>
-                  <input type="email" class="form-control" id="inputEmail" />
-                </div>
-                <div class="col-lg-6 mb-3" style="margin-bottom: 8px">
-                  <label for="inputPhone" class="form-label">Phone Number</label>
-                  <input type="phone" class="form-control" id="inputPhone" />
-                </div>
-                <div class="col-lg-6 mb-3">
                   <label for="photo" class="form-label">Profile Photo</label>
                   <input class="form-control" type="file" id="photo">
                 </div>
-                <div class="col-lg-6 mb-3">
+                <div class="col-12 mb-3">
                   <label for="inputAddress" class="form-label">Address</label>
-                  <input type="address" class="form-control" id="inputAddress">
+                  <input type="address" class="form-control" id="inputAddress" name="address">
                 </div>
                 <div class="col-lg-6 mb-3">
                   <label for="inputCountry" class="form-label">Country</label>
-                  <select id="inputCountry" class="form-select">
+                  <select id="inputCountry" class="form-select select_2">
                     <option selected="">Select Country</option>
                     <option value="AFGHANISTAN">AFGHANISTAN</option>
                     <option value="ALBANIA">ALBANIA</option>
@@ -183,7 +180,7 @@
                 </div>
                 <div class="col-lg-6 mb-3">
                   <label for="inputCity" class="form-label">City</label>
-                  <select id="inputCity" class="form-select">
+                  <select id="inputCity" class="form-select select_2">
                     <option selected disabled>Select City</option>
                     <option>Option 1</option>
                     <option>Option 2</option>
@@ -192,7 +189,7 @@
                 </div>
                 <div class="col-lg-6 mb-3">
                   <label for="inputState" class="form-label">State</label>
-                  <select id="inputState" class="form-select">
+                  <select id="inputState" class="form-select select_2">
                     <option selected disabled>Select State</option>
                     <option value="Alaska">Alaska</option>
                     <option value="Alabama">Alabama</option>
@@ -202,9 +199,18 @@
                   <label for="inputZip" class="form-label">Zip</label>
                   <input type="text" class="form-control" id="inputZip" />
                 </div>
+
+                <div class="col-lg-6 mb-3">
+                  <label for="inputlink" class="form-label">LinkedIn</label>
+                  <input type="text" class="form-control" id="inputlink" />
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <label for="inputfb" class="form-label">Facebook</label>
+                  <input type="text" class="form-control" id="inputfb" />
+                </div>
                 <div class="col-lg-6 mb-3">
                   <label for="inputcoll" class="form-label">College/University</label>
-                  <select id="inputcoll" class="form-select">
+                  <select id="inputcoll" class="form-select select_2">
                     <option selected="">Select Country</option>
                     <option value="">AFGHANISTAN</option>
                     <option value="">ALBANIA</option>
@@ -223,7 +229,7 @@
                 </div>
                 <div class="col-lg-6 mb-3">
                   <label for="inputClassification" class="form-label">Classification</label>
-                  <select id="inputClassification" class="form-select">
+                  <select id="inputClassification" class="form-select select_2">
                     <option selected>Select</option>
                     <option value="Freshman">Freshman</option>
                     <option value="Sophomore">Sophomore</option>
@@ -235,10 +241,14 @@
                 <div class="col-lg-6 mb-3">
                   <label for="inputCurrentGPA" class="form-label">Current GPA</label>
                   <input type="text" class="form-control" id="inputCurrentGPA">
+                  <label class="pt-1">
+                    <input class="form-check-input" type="checkbox"> Show GPA on visitor?
+                  </label>
+
                 </div>
                 <div class="col-lg-6 mb-3">
                   <label for="inputDegreeEnrolledIn" class="form-label">Degree Enrolled</label>
-                  <select id="inputDegreeEnrolledIn" class="form-select">
+                  <select id="inputDegreeEnrolledIn" class="form-select select_2">
                     <option selected>Select</option>
                     <option value="Undergraduate">Undergraduate</option>
                     <option value="Graduate">Graduate</option>
@@ -255,14 +265,6 @@
                   <input class="form-control" type="file" id="formFileMultiple" multiple>
                 </div>
 
-                <div class="col-lg-6 mb-3">
-                  <label for="inputlink" class="form-label">LinkedIn</label>
-                  <input type="text" class="form-control" id="inputlink" />
-                </div>
-                <div class="col-lg-6 mb-3">
-                  <label for="inputfb" class="form-label">Facebook</label>
-                  <input type="text" class="form-control" id="inputfb" />
-                </div>
                 <div class="col-12 mb-3">
                   <div class="form-check">
                     <label class="form-check-label">
@@ -360,7 +362,13 @@
 
   <script src="../js/bootstrap.bundle.min.js"></script>
   <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
   <script src="../js/script.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.select_2').select2();
+    });
+  </script>
 </body>
 
 </html>
