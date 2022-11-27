@@ -433,9 +433,12 @@ h5{
 }
 
 /* breadcrumb css */
+.breadcrumb {
+    margin-bottom: 0;
+}
 .breadcrumb_section{
     background: var(--secondary-color);
-    padding: 40px 0;
+    padding: 20px 0;
 }
 .breadcrumb_section .breadcrumb-item a{
     color: var(--tertiary-color);
